@@ -6,5 +6,5 @@ const UserSchema = new mongoose.Schema({
   password: String,
   courses: [{ type: mongoose.Schema.Types.ObjectId, ref: "Course" }]
 });
-
+const User = mongoose.models.User || mongoose.model('User', userSchema);
 module.exports = mongoose.model("User", UserSchema);
