@@ -23,7 +23,7 @@ const authRoutes = require("./routes/auth");
 app.use("/auth", authRoutes);
 
 
-const User = require("../models/User");
+const User = require("./models/User");
 
 
 
